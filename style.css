@@ -1,0 +1,267 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+
+.main-link {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 12px;
+    color: #737373;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.nav-link:last-child {
+    margin-right: 39px;
+}
+
+.search-icon {
+    margin-right: 18px;
+}
+
+.container-main {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin-top: 134px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-top: 40px;
+}
+
+.button-wrapper {
+display: flex;
+justify-content: center; 
+margin-top: 40px;
+padding-bottom: 74px;
+}
+
+.button-buy {
+  color: #ffffff;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 10px 36px;
+  background-color: #FFA62B;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+}
+
+.button-about {
+  border-color: #00A0C1;
+  border-radius: 20px;
+  padding: 10px 36px;
+  border: 1px solid #00A0C1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-about {
+  color: #00A0C1
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.header-section {
+  background-color: #FAFAFA;
+}
+
+.reason {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  justify-content: space-between;
+}
+
+
+
+.advantages h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252B42;
+  letter-spacing: 0.2px;
+}
+.advantages p {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;;
+}
+
+.advantages-card-wrapper {
+  display: flex;
+}
+
+.advantages-card-wrapper:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advantages-card {
+  padding: 35px 40px;
+  border: 1px solid #E8E8E8; 
+}
+
+.advantages-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-card-top {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.advantages-card-top img {
+  padding-right: 15px;
+}
+
+.advantages-card-heading {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.advantages-card-description {
+  font-size: 14px;
+  color: #737373;
+}
+
+
+
+
+
+
