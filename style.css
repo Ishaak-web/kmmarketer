@@ -86,6 +86,7 @@ a {
 .container {
     width: 1050px;
     margin: 0 auto;
+    position:relative;
 }
 
 
@@ -220,7 +221,7 @@ section {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: #737373;;
+  color: #737373;
 }
 
 .advantages-card-wrapper {
@@ -260,8 +261,97 @@ section {
   color: #737373;
 }
 
+.details h2{
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252B42;
+  letter-spacing: 0.2px;
+  padding: 80px 285px 10px 285px;
+  
+}
+
+.details p {
+  padding: 0px 197px 50px 197px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.details img {
+  margin: 0 auto;
+}
 
 
 
+.reviews h2 {
+  margin-top: 80px; 
+  padding-bottom: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252B42;
+  letter-spacing: 0.2px;
+}
 
+.reviews p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 30px;
+}
 
+.clients-reviews-wraper {
+  display: flex;
+  justify-content: center;
+}
+ 
+.clients-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.authors {
+  display: flex;
+}
+
+  
+
+.clients-card p{
+  margin-bottom: 20px;
+}
+
+.clients-card:not(:last-child) {
+  margin-right: 30px;
+}
+  
+.class-1 {
+  padding: 30px 35px;
+}
+
+.clients-card .class-1 img, p{
+  margin-bottom: 20px;
+}
+
+  
+.clients-card .authors .face img {
+  weight: 50px ;
+  height: 50px ;
+}
+  
+.clients-card .authors .class-2 {
+  width: 95px;
+  height: 48px;
+}
